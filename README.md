@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">A creative chef AI able to generate new recipes.</h4>
+<h4 align="center">A creative chef AI able to generate new recipes. 👨‍🍳</h4>
 
 <p align="center">
 	<a href="https://forthebadge.com">
