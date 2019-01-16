@@ -5,12 +5,15 @@
   <br>
 </h1>
 
-<h4 align="center">An creative chef AI able to generate new recipes.</h4>
+<h4 align="center">A creative chef AI able to generate new recipes.</h4>
 
 <p align="center">
-
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+	<a href="https://forthebadge.com">
+      <img src="https://forthebadge.com/images/badges/made-with-python.svg">
+    </a>
+	<a href="https://forthebadge.com">
+      <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+	</a>
 </p>
 <br>
 <p align="center">
