@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="#"><img src="https://github.com/gcollelu/rams.ai/resources/logo.png" alt="RamsAI" width="200"></a>
+  <a href="#"><img src="https://raw.githubusercontent.com/gcollelu/rams.ai/master/resources/logo.png" alt="RamsAI" width="200"></a>
   <br>
 </h1>
 
@@ -31,7 +31,6 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
 ## Key Features
 
