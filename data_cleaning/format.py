@@ -43,7 +43,9 @@ def format_recipe(idx):
 def format_recipes():
    json_recipes = []
    for i in range(len(data)):
-      json_recipes.append(format_recipe(i))
+      formatted_recipe = format_recipe(i)
+      if len(formatted_recipe['ingredients']) > 0 :
+         json_recipes.append(formatted_recipe)
    return json_recipes
 
 
