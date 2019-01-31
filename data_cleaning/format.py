@@ -11,7 +11,7 @@ def print_entry(idx):
 
 # A helper function for debugging
 def test_ingredients(idx):
-   p = re.compile(r'^(?P<amount>(\d/\d)|(\d+(\s\d/\d)?))(\s(?P<unit>cup|teaspoon|tablespoon|pinch|pound|ounce|package)(s?))?(\s(\(.+\)))?(\s(?P<name>.+))?$', re.IGNORECASE)
+   p = re.compile(r'^(?P<amount>(\d/\d)|(\d+(\s\d/\d)?))(\s(\(.+\)))?(\s(?P<unit>cup|teaspoon|tablespoon|pinch|pound|ounce|package)(s?))?(\s(?P<name>.+))?$', re.IGNORECASE)
    for ingredient in data[idx]['ingredients'] :
       print(re.match(p, ingredient).groupdict())
 
@@ -23,10 +23,10 @@ def format_recipe(idx):
    json_recipe['ingredients'] = []
    json_recipe['steps'] = []
    json_recipe['rating'] = data[idx]['rating_stars']
-   # I made this RegEx
-   # '^(?P<amount>(\d/\d)|(\d+(\s\d/\d)?))(\s(?P<unit>cup|teaspoon|tablespoon|pinch|pound)(s?))?(\s(?P<name>.+))?$'
+   
+   # '^(?P<amount>(\d/\d)|(\d+(\s\d/\d)?))(\s(\(.+\)))?(\s(?P<unit>cup|teaspoon|tablespoon|pinch|pound|ounce|package)(s?))?(\s(?P<name>.+))?$'
    # It located amount, unit and name in an ingredient
-   p = re.compile(r'^(?P<amount>(\d/\d)|(\d+(\s\d/\d)?))(\s(?P<unit>cup|teaspoon|tablespoon|pinch|pound|ounce|package)(s?))?(\s(\(.+\)))?(\s(?P<name>.+))?$', re.IGNORECASE)
+   p = re.compile(r'^(?P<amount>(\d/\d)|(\d+(\s\d/\d)?))(\s(\(.+\)))?(\s(?P<unit>cup|teaspoon|tablespoon|pinch|pound|ounce|package)(s?))?(\s(?P<name>.+))?$', re.IGNORECASE)
 
    for ingredient in data[idx]['ingredients'] :
       ingredient_match = re.match(p, ingredient)
