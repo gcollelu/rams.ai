@@ -39,12 +39,14 @@ def format_recipe(idx):
       json_recipe['steps'].append({'idx': i+1, 'content': data[idx]['instructions'][i]})
    return json_recipe
 
+def recipe_has_all_values(recipe):
+   return recipe['ingredients'] and recipe['title'] and recipe['steps']
 
 def format_recipes():
    json_recipes = []
    for i in range(len(data)):
       formatted_recipe = format_recipe(i)
-      if len(formatted_recipe['ingredients']) > 0 :
+      if recipe_has_all_values(formatted_recipe) :
          json_recipes.append(formatted_recipe)
    return json_recipes
 

@@ -4,6 +4,7 @@ with open('recipes.json') as recipes_file:
     recipes = json.load(recipes_file)
 
 print(json.dumps(recipes[127835], indent=2))
+print(len(recipes))
 
 # def get_ingredients(recipe):
 #     ingredients = []
