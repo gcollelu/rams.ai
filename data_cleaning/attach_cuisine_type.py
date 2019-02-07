@@ -5,6 +5,13 @@ input_file=open('recipes.json', 'r')
 raw_data=json.load(input_file)
 csvFile="submission.csv"
 
+reader = csv.reader(open(csvFile, 'r'))
+cuisines={}
+for data in reader:
+    dataid = data[0]
+    cuisines[dataid]= data[1]
+
+#print(cuisines['220028'])
 result = []
 for item in raw_data:
     ingredients = []
@@ -15,13 +22,10 @@ for item in raw_data:
     my_dict['steps']=item['steps']
     my_dict['rating']=item['rating']
 
-    reader = csv.reader(open(csvFile, 'r'))
-    for data in reader:
-        if data[0] == my_dict['id']:
-            my_dict['cuisine'] = data[1]
-            break
-
-    if 'cuisine' in my_dict:
+    itemid = str(my_dict['id'])
+    if itemid in cuisines:
+        #print("ha")
+        my_dict['cuisine'] = cuisines[itemid]
         result.append(my_dict)
     #else:
         #print ("ID: " + str(item['id']))

@@ -5,3 +5,4 @@ data.json
 # Local Editor files
 .vscode/
 data_cleaning/cleaned_recipes.json
+data_cleaning/final_recipes.json
