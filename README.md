@@ -42,6 +42,53 @@
 
 ## Data
 
+Thanks [Archive.org](https://archive.org/download/recipes-en-201706/) for the data! After a bit of cleaning, here's what our data looks like 
+
+```json
+{
+   "id":127843,
+   "title":"Fruit and Yogurt Treats",
+   "ingredients":[
+      {
+         "amount":"1/3",
+         "unit":"cup",
+         "name":"SMUCKER'S Strawberry Low Sugar Preserves"
+      },
+      {
+         "amount":"1/4",
+         "unit":"cup",
+         "name":"JIF Creamy Peanut Butter & Honey"
+      },
+      {
+         "amount":"1",
+         "unit":"cup",
+         "name":"low-fat vanilla yogurt"
+      },
+      {
+         "amount":"8",
+         "unit":null,
+         "name":"sugar cones"
+      },
+      {
+         "amount":"4",
+         "unit":"cup",
+         "name":"fresh mixed fruits: chopped strawberries, bananas, pineapple, mandarin oranges, kiwi and blueberries"
+      }
+   ],
+   "steps":[
+      {
+         "idx":1,
+         "content":"Combine preserves, peanut butter and yogurt until blended."
+      },
+      {
+         "idx":2,
+         "content":"Chop fruit small. Place a tablespoon of yogurt mixture into bottom of cone. Fill cone with fruit until heaping. Top fruit with a dollop of yogurt mixture."
+      }
+   ],
+   "rating":3.5
+}
+```
+
 ## Deep Learning
 
 ## How To Use
