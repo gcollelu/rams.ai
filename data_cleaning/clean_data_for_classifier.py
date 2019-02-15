@@ -8,11 +8,11 @@ result = []
 for item in raw_data:
     ingredients = []
     my_dict={}
-    my_dict['id']=item['id'] + 10000
+    my_dict['id']=item['id']
     my_dict['ingredients'] = []
     for ingredient in item['ingredients']:
-        if (ingredient['name'] is not None):
-            my_dict['ingredients'].append(ingredient['name'])
+        if (ingredient is not None):
+            my_dict['ingredients'].append(ingredient)
         #else:
         #    print ("null ingredient ID: " + str(item['id']))
     #print(my_dict)
