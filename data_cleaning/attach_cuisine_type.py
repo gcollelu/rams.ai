@@ -30,5 +30,5 @@ for item in raw_data:
     #else:
         #print ("ID: " + str(item['id']))
     
-with open('final_recipes.json', 'w') as data_file:
+with open('final_recipes_classified.json', 'w') as data_file:
     json.dump(result, data_file)
