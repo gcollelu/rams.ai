@@ -17,6 +17,7 @@ for element in raw_data:
     element.pop('prep_time_minutes', None)
     element.pop('total_time_minutes', None)
     element.pop('url', None)
+
     
 with open('data.json', 'w') as data_file:
     json.dump(raw_data, data_file)
